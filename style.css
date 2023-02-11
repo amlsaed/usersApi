@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: start;
+}
+
+div:first-child{
+  width: 200px;
+}
+div:first-child li{
+    background: #eee;
+    margin: 10px;
+    padding: 10px;
+}
+div:first-child ul{
+    height: 100vh;
+    overflow-y: auto;
+    border-radius: 0 20px 20px 0;
+    overflow-x: hidden;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+div:last-child{
+width: calc(100% - 200px - 1rem);
+}
+
+div:last-child li{
+    background: #eee;
+    margin: 10px;
+    padding: 10px;
+}
+
+div:last-child ul{
+    list-style: none;
+}
